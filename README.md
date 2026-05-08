@@ -2,9 +2,9 @@
 
 Slides for the talk **"The Road to a Faster ReSharper"** by [Kevin Gosse](https://minidump.net/).
 
-- **NDC Oslo** — September 17, 2026
 - **Techorama Belgium** — May 12, 2026
 - **Update Conference Krakow** — May 27, 2026
+- **NDC Oslo** — September 17, 2026
 
 ## View the slides
 
