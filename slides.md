@@ -3,73 +3,10 @@ theme: ./theme
 title: The Road to a Faster ReSharper
 info: |
   ## The Road to a Faster ReSharper
-  Kevin Gosse — Techorama 2026
+  Kevin Gosse
 drawings:
   persist: false
 transition: slide-left
----
-
-<div class="tech-title">
-  <img src="/logo.png" class="tech-logo" />
-  <h1 class="tech-h1">The Road to a Faster ReSharper</h1>
-  <p class="tech-sub">Kevin Gosse</p>
-</div>
-
-<style>
-@font-face {
-  font-family: 'DS Wallau';
-  src: url('/fonts/DSWallau.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Alegreya';
-  src: url('/fonts/AlegreyaMedium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Alegreya';
-  src: url('/fonts/Alegreya-Variable.ttf') format('truetype-variations');
-  font-weight: 100 900;
-  font-style: normal;
-}
-.tech-title {
-  position: absolute;
-  inset: 0;
-  background: url('/background.png') center/cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: -49px -84px;
-  z-index: 10;
-}
-.tech-logo {
-  width: 358px;
-  margin-bottom: 4rem;
-}
-.tech-h1 {
-  font-family: 'DS Wallau', serif;
-  font-size: 2.8rem;
-  color: #ffffff;
-  text-align: center;
-  margin: 0;
-  line-height: 1.2;
-  font-weight: normal;
-  border-bottom: none;
-  padding-bottom: 0;
-}
-.tech-sub {
-  font-family: 'Alegreya', serif;
-  font-size: 1.4rem;
-  color: #ffffff;
-  margin-top: 0.6rem;
-  font-weight: 500;
-}
-</style>
-
 ---
 
 <div class="title3">
@@ -5069,26 +5006,3 @@ image: /closing.png
 }
 </style>
 
----
-
-<div class="qr-slide">
-  <img src="/qr-backup.png" class="qr-img" />
-</div>
-
-<style>
-.qr-slide {
-  position: absolute;
-  inset: 0;
-  margin: -49px -84px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #1a1a2e;
-  z-index: 10;
-}
-.qr-img {
-  max-height: 80%;
-  max-width: 80%;
-  object-fit: contain;
-}
-</style>
