@@ -1,0 +1,291 @@
+/* ============================================
+   JetBrains Light Theme for Slidev
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono&display=swap');
+
+:root {
+  /* JetBrains brand palette */
+  --jb-blue: #087CFA;
+  --jb-teal: #28B8A0;
+  --jb-orange: #FC801D;
+  --jb-pink: #FF318C;
+  --jb-purple: #6B57FF;
+  --jb-green: #59C459;
+
+  /* Theme colors */
+  --jb-bg: #FFFFFF;
+  --jb-bg-soft: #F7F8FA;
+  --jb-text: #27282C;
+  --jb-text-soft: #6B727F;
+  --jb-border: #E8EAED;
+
+  /* Slidev overrides */
+  --slidev-theme-primary: var(--jb-blue);
+  --slidev-theme-accents-vulcan: var(--jb-text);
+}
+
+/* ---- Global typography ---- */
+
+.slidev-layout {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--jb-text);
+  background: var(--jb-bg);
+}
+
+.slidev-layout h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  color: var(--jb-text);
+  border-bottom: 3px solid var(--jb-blue);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.slidev-layout h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--jb-text);
+  margin-bottom: 1rem;
+}
+
+.slidev-layout h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--jb-text-soft);
+}
+
+.slidev-layout p {
+  line-height: 1.7;
+  color: var(--jb-text);
+}
+
+.slidev-layout li {
+  line-height: 1.8;
+  color: var(--jb-text);
+}
+
+.slidev-layout strong {
+  color: var(--jb-blue);
+  font-weight: 600;
+}
+
+.slidev-layout a {
+  color: var(--jb-blue);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.slidev-layout a:hover {
+  border-bottom-color: var(--jb-blue);
+}
+
+/* ---- Code blocks ---- */
+
+.slidev-layout code,
+.slidev-layout pre,
+.slidev-layout .shiki,
+.slidev-layout .shiki code,
+.slidev-layout .shiki span {
+  font-family: 'Cascadia Mono', monospace !important;
+}
+
+.slidev-layout code {
+  font-size: 1.05em;
+}
+
+.slidev-layout :not(pre) > code {
+  background: var(--jb-bg-soft);
+  border: 1px solid var(--jb-border);
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  color: var(--jb-purple);
+}
+
+.slidev-layout pre {
+  background: var(--jb-bg-soft) !important;
+  border: 1px solid var(--jb-border);
+  border-radius: 8px;
+  padding: 1.2rem !important;
+}
+
+/* Shiki code highlighting */
+.slidev-layout .shiki {
+  background: var(--jb-bg-soft) !important;
+}
+
+/* ---- Slide padding & structure ---- */
+
+.slidev-layout {
+  padding: 2.5rem 3rem;
+}
+
+/* Cover slide needs zero padding so the cat image can go edge-to-edge */
+.slidev-page-1 .slidev-layout,
+.slidev-page-2 .slidev-layout {
+  padding: 0;
+}
+
+/* ---- Subtle top accent bar on every slide ---- */
+
+.slidev-layout::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--jb-blue), var(--jb-purple), var(--jb-pink), var(--jb-orange));
+}
+
+/* ---- Section layout — big centered text ---- */
+
+.slidev-layout.layout-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--jb-bg);
+}
+
+.slidev-layout.layout-section h1 {
+  font-size: 3rem;
+  border-bottom: none;
+  padding-bottom: 0;
+  color: var(--jb-blue);
+}
+
+.slidev-layout.layout-section p {
+  font-size: 1.3rem;
+  color: var(--jb-text-soft);
+  max-width: 600px;
+}
+
+/* ---- Cover/title layout ---- */
+
+.slidev-layout.layout-cover,
+.slidev-layout.layout-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--jb-bg);
+}
+
+.slidev-layout.layout-cover h1,
+.slidev-layout.layout-intro h1 {
+  font-size: 3.2rem;
+  border-bottom: none;
+  color: var(--jb-text);
+  margin-bottom: 0.5rem;
+}
+
+.slidev-layout.layout-cover p,
+.slidev-layout.layout-intro p {
+  font-size: 1.3rem;
+  color: var(--jb-text-soft);
+}
+
+/* ---- End layout ---- */
+
+.slidev-layout.layout-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slidev-layout.layout-end h1 {
+  font-size: 3rem;
+  border-bottom: none;
+  color: var(--jb-blue);
+}
+
+/* ---- Two-column layout ---- */
+
+.slidev-layout.layout-two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* ---- v-click animations ---- */
+
+.slidev-vclick-target {
+  transition: all 0.4s ease;
+}
+
+.slidev-vclick-hidden {
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}
+
+/* ---- JetBrains logo on every slide (bottom-right) ---- */
+
+.slidev-layout::after {
+  content: '';
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1.5rem;
+  width: 32px;
+  height: 32px;
+  background: url('/jb-logo.png') no-repeat center / contain;
+  opacity: 1;
+  z-index: 100;
+  pointer-events: none;
+}
+
+/* Hide the corner logo and top bar on the cover slide (it has its own full logo) */
+.slidev-page-1 .slidev-layout::after,
+.slidev-page-1 .slidev-layout::before {
+  display: none;
+}
+
+/* ---- Page number ---- */
+
+.slidev-page-number {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  color: var(--jb-text-soft);
+}
+
+/* ---- Slide transitions ---- */
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-enter-from {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.slide-leave-to {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+/* ---- Reusable "problems" callout block ---- */
+
+.list-label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.list ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.list li {
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+}
