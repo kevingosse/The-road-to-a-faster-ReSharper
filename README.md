@@ -7,7 +7,7 @@ Slides for the talk **"The Road to a Faster ReSharper"** by [Kevin Gosse](https:
 
 ## View the slides
 
-Live deck: <https://kevingosse.github.io/the-road-to-a-faster-resharper/>
+Live deck: <https://kevingosse.github.io/The-road-to-a-faster-ReSharper/>
 
 ## Run locally
 

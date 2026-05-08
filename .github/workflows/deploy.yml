@@ -24,7 +24,7 @@ jobs:
           node-version: '20'
           cache: npm
       - run: npm ci
-      - run: npx slidev build --base /the-road-to-a-faster-resharper/
+      - run: npx slidev build --base /The-road-to-a-faster-ReSharper/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
